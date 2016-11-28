@@ -23,6 +23,11 @@
 import argparse
 import os
 import sys
+import binascii
+def calcCRC32(s)
+
+    crc=binascii.crc32(s)
+    return crc & OxFFFFFFFF
 
 permitted_characters = set(
     map(ord, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890_'))  # \w
